@@ -1,0 +1,20 @@
+.wrapper {
+  position: relative;
+}
+
+.image__container img {
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  background: linear-gradient(
+    180deg,
+    rgba(22, 22, 22, 0.5) 100%,
+    rgba(45, 45, 45, 0.5) 100%
+  );
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
