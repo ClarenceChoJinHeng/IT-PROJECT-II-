@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500;600;700&family=Raleway:wght@400;500;600;700&display=swap");
+
+@import url("CSS/index/header-navigation.css");
+@import url("CSS/index/background.css");
+
+/* ========== HSL COLOR ========== */
+
+:root {
+  --grey: linear-gradient(hsla(50, 80%, 100%, 0.5), hsla(40, 60%, 80%, 0.4));
+
+  --white: hsl(0, 0%, 100%);
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
+
+  --body-color: hsl(220, 100%, 97%);
+  --black-color-lighten: hsl(220, 20%, 18%);
+  --black-light: hsla(0, 0%, 0%, 0.5);
+
+  --black-light-dimmer: hsla(0, 0%, 0%, 0.8);
+  --text: hsl(84, 99%, 52%);
+  --background: hsl(308, 71%, 4%);
+
+  --primary: hsl(122, 80%, 58%);
+  --secondary: hsl(57, 94%, 43%);
+  --accent: hsl(46, 68%, 54%);
+
+  --white--dark: hsla(0, 0%, 79%, 1);
+  --medium--grey: hsl(0, 2%, 35%);
+  --blue--dark: hsl(233, 80%, 63%);
+
+  --red--dark: hsl(352, 100%, 34%);
+  --light--red: hsl(352, 100%, 50%);
+  --light--yellow: hsl(52, 100%, 50%);
+
+/* ========== RGB COLOR ========== */
+
+  --green--light: rgb(83, 170, 30);
+
+  /* ========== FONT ========== */
+
+  --Raleway: "Raleway", sans-serif;
+  --Josefin: "Josefin Sans", sans-serif;
+
+  /* ========== FONT WEIGHT ========== */
+
+  --Raleway400: 400;
+  --Raleway700: 700;
+  --Raleway500: 500;
+  --Raleway600: 600;
+
+  /* ========== FONT SIZE ==========  */
+
+  --Raleway14: 14px;
+  --Raleway16: 16px;
+  --Raleway20: 20px;
+  --Raleway25: 25px;
+  --RalewayNormal: 0.938rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+  /* border: 1px solid white; */
+}
+
+body {
+  /* background-color: var(--black); */
+  height: 150vh;
+}
+
+/* ============ Responsive typography ============ */
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+  }
+}
