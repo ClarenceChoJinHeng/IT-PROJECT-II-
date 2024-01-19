@@ -1,0 +1,265 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: var(--medium--grey);
+  font-family: var(--Raleway);
+  font-weight: var(--Raleway700);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000vh;
+  align-items: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  padding: 20px;
+}
+
+.second__container {
+  display: none;
+}
+
+/* ============= NAV LOGO ============= */
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav__logo > span {
+  gap: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.with__italic {
+  margin-right: 0.5vh;
+}
+
+/* ============= NAV BURGER AND CLOSE ============= */
+
+.nav__burger__div {
+  display: none;
+}
+
+.nav__close__div {
+  display: none;
+}
+
+/* ============= NAV MENU ============= */
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  font-weight: var(--Raleway600);
+  font-size: var(--Raleway14);
+  transform: translateX(-30%);
+}
+
+.nav__menu > li {
+  padding-left: 25px;
+  padding-right: 25px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+/* ============= NAV TRANSITION ============= */
+
+.nav__logo a,
+.nav__car__logo,
+.nav__link,
+.nav__login {
+  transition: color 0.2s ease-in-out;
+}
+
+/* ============= NAV LOGIN & USER & SEARCH ============= */
+
+.nav__login__search__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 5vh;
+  width: 10vh;
+  margin-right: 10vh;
+}
+
+.nav__search__div {
+  transform: translate(-100%, 0%);
+  justify-content: center;
+  margin: auto;
+}
+
+.nav__login__div {
+  /* position: relative; */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-100%, 0%);
+}
+
+.nav__user__container {
+  display: none;
+}
+
+/* ============= LINK HOVER ============= */
+
+.nav__logo a:hover {
+  color: var(--secondary);
+}
+
+.nav__logo a:hover .nav__car__logo {
+  color: var(--secondary);
+}
+
+.nav__link:hover {
+  color: var(--text);
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.nav__login:hover {
+  color: var(--secondary);
+}
+
+/* ============= NAV RESPONSIVE MENU ============= */
+
+@media screen and (max-width: 1300px) {
+  .nav__logo {
+    transform: translateX(30%);
+  }
+
+  header {
+    position: relative;
+    border-bottom: 2px;
+  }
+
+  .second__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    height: 9vh;
+    margin-top: 9.5vh;
+    background-color: var(--white--dark);
+  }
+
+  .nav__menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    max-width: 100vh;
+    /* max-height: 100vh; */
+    margin-top: 23.5vh;
+    margin-left: 3vh;
+    transform: none;
+  }
+
+  .nav__login__search__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5vh;
+    width: 10vh;
+    transform: translate(80%, 0%);
+  }
+
+  .nav__search__div {
+    transform: translate(-130%, 0%);
+    justify-content: center;
+    margin: auto;
+  }
+}
+
+/* ============= NAV SECOND RESPONSIVE MENU ============= */
+
+@media screen and (max-width: 900px) {
+  .nav__logo {
+    transform: translateX(15%);
+  }
+
+  .second__container {
+    display: none;
+  }
+
+  .nav__menu {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    height: 45vh;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--black-light-dimmer);
+    backdrop-filter: blur(0.5vh);
+    transition: top 1s ease 0s;
+    margin-top: 0vh;
+  }
+
+  .nav__menu > li {
+    padding: 15px;
+    margin: 0;
+    inset: 0;
+  }
+
+  .nav__burger__div {
+    display: initial;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%, 0%);
+  }
+
+  .nav__close__div {
+    display: initial;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    inset: 0;
+    padding: 0;
+    width: max-content;
+    height: max-content;
+    font-size: var(--Raleway20);
+    margin-top: 2.5vh;
+    margin-left: 3vh;
+  }
+
+  .nav__close:hover {
+    color: var(--secondary);
+  }
+
+  .nav__login__search__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 5vh;
+    width: 8vh;
+    transform: translate(130%, 0%);
+  }
+
+  .nav__search__div {
+    justify-content: center;
+    margin-right: 3vh;
+  }
+}
